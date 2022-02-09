@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as *;
+body {
+  background-color: var(--clr-dark-bg);
+}
+
+main {
+  height: 65vh;
+  @include flex-row(space-around, center);
+  .guess {
+    background: none;
+    border: 4px solid var(--clr-soft-white);
+    padding: 2rem;
+    width: 20rem;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .left {
+    width: 50rem;
+    @include flex-column(center, center);
+  }
+  .right {
+    width: 48rem;
+    .message {
+      margin-bottom: 4rem;
+      height: 3rem;
+    }
+    .label-score {
+      margin-bottom: 2rem;
+    }
+  }
+}

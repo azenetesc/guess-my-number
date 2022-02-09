@@ -1,0 +1,17 @@
+header {
+  .again {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+.btn {
+  border: none;
+  background-color: var(--clr-soft-white);
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--clr-light-gray);
+  }
+}

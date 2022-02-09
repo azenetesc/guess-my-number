@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+:root {
+  --clr-dark-bg: hsl(0, 0%, 13%);
+  --clr-soft-white: hsl(0, 0%, 93%);
+  --clr-light-gray: hsl(0, 0%, 80%);
+  --clr-dark-gray: hsl(0, 0%, 20%);
+  --ff-body: "Bungee", cursive;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: var(--clr-dark-bg);
+}
+
+main {
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .guess {
+  background: none;
+  border: 4px solid var(--clr-soft-white);
+  padding: 2rem;
+  width: 20rem;
+  display: block;
+  margin-bottom: 3rem;
+}
+main .left {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .right {
+  width: 48rem;
+}
+main .right .message {
+  margin-bottom: 4rem;
+  height: 3rem;
+}
+main .right .label-score {
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: var(--ff-body);
+  color: var(--clr-soft-white);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+header .between {
+  font-size: 1.1rem;
+}
+header .number {
+  font-size: 5rem;
+  color: var(--clr-dark-gray);
+}
+
+main {
+  color: var(--clr-soft-white);
+}
+main .guess {
+  font-size: 2rem;
+  color: inherit;
+  text-align: center;
+}
+main .right {
+  font-size: 1.5rem;
+}
+main .btn {
+  font-size: 2rem;
+  color: var(--clr-dark-bg);
+}
+
+header .again {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.btn {
+  border: none;
+  background-color: var(--clr-soft-white);
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--clr-light-gray);
+}
+
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid var(--clr-soft-white);
+}
+header h1 {
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .between {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+header .number {
+  background: var(--clr-soft-white);
+  width: 12rem;
+  padding: 0.2rem 0rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -150,9 +150,11 @@ header .again {
 
 .btn {
   border: none;
+  border-radius: 5px;
   background-color: var(--clr-soft-white);
   padding: 2rem 3rem;
   cursor: pointer;
+  box-shadow: 1px 1px 5px 2px rgba(3, 255, 255, 0.397);
 }
 .btn:hover {
   background-color: var(--clr-light-gray);
@@ -183,6 +185,7 @@ header .number {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+  box-shadow: 1px 1px 20px 2px rgba(255, 2, 234, 0.397);
 }
 
 /*# sourceMappingURL=main.css.map */

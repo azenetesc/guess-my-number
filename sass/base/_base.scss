@@ -9,17 +9,17 @@ main {
   .guess {
     background: none;
     border: 4px solid var(--clr-soft-white);
-    padding: 2rem;
-    width: 20rem;
+    padding: 2.5rem;
+    width: 25rem;
     display: block;
     margin-bottom: 3rem;
   }
   .left {
-    width: 50rem;
+    width: 52rem;
     @include flex-column(center, center);
   }
   .right {
-    width: 48rem;
+    width: 52rem;
     .message {
       margin-bottom: 4rem;
       height: 3rem;

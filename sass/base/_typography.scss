@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--ff-body);
   color: var(--clr-soft-white);
@@ -6,13 +10,13 @@ body {
 
 header {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .between {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   .number {
-    font-size: 5rem;
+    font-size: 6rem;
     color: var(--clr-dark-gray);
   }
 }
@@ -20,15 +24,17 @@ header {
 main {
   color: var(--clr-soft-white);
   .guess {
-    font-size: 2rem;
+    font-size: 5rem;
     color: inherit;
     text-align: center;
+    font-family: inherit;
   }
   .right {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .btn {
     font-size: 2rem;
     color: var(--clr-dark-bg);
+    font-family: inherit;
   }
 }

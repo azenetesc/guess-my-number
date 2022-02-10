@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 :root {
   --clr-dark-bg: hsl(0, 0%, 13%);
   --clr-soft-white: hsl(0, 0%, 93%);
   --clr-light-gray: hsl(0, 0%, 80%);
   --clr-dark-gray: hsl(0, 0%, 20%);
-  --ff-body: "Bungee", cursive;
+  --ff-body: "Press Start 2P", sans-serif;
 }
 
 /* Box sizing rules */
@@ -80,20 +80,20 @@ main {
 main .guess {
   background: none;
   border: 4px solid var(--clr-soft-white);
-  padding: 2rem;
-  width: 20rem;
+  padding: 2.5rem;
+  width: 25rem;
   display: block;
   margin-bottom: 3rem;
 }
 main .left {
-  width: 50rem;
+  width: 52rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 main .right {
-  width: 48rem;
+  width: 52rem;
 }
 main .right .message {
   margin-bottom: 4rem;
@@ -103,6 +103,10 @@ main .right .label-score {
   margin-bottom: 2rem;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--ff-body);
   color: var(--clr-soft-white);
@@ -110,13 +114,13 @@ body {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 header .between {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 header .number {
-  font-size: 5rem;
+  font-size: 6rem;
   color: var(--clr-dark-gray);
 }
 
@@ -124,28 +128,30 @@ main {
   color: var(--clr-soft-white);
 }
 main .guess {
-  font-size: 2rem;
+  font-size: 5rem;
   color: inherit;
   text-align: center;
+  font-family: inherit;
 }
 main .right {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 main .btn {
   font-size: 2rem;
   color: var(--clr-dark-bg);
+  font-family: inherit;
 }
 
 header .again {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 .btn {
   border: none;
   background-color: var(--clr-soft-white);
-  padding: 0.5rem 1.2rem;
+  padding: 2rem 3rem;
   cursor: pointer;
 }
 .btn:hover {
@@ -166,13 +172,13 @@ header h1 {
 }
 header .between {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 2rem;
 }
 header .number {
   background: var(--clr-soft-white);
-  width: 12rem;
-  padding: 0.2rem 0rem;
+  width: 15rem;
+  padding: 3rem 0rem;
   position: absolute;
   bottom: 0;
   left: 50%;

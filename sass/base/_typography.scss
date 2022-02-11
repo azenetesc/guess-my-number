@@ -10,30 +10,34 @@ body {
 
 header {
   h1 {
-    font-size: 4rem;
+    font-size: 8rem;
+    letter-spacing: 5px;
   }
   .between {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
   }
   .number {
-    font-size: 6rem;
+    font-size: 8rem;
     color: var(--clr-dark-gray);
+  }
+  .again {
+    font-size: 1.5rem;
   }
 }
 
 main {
   color: var(--clr-soft-white);
   .guess {
-    font-size: 5rem;
+    font-size: 6rem;
     color: inherit;
     text-align: center;
-    font-family: inherit;
+    font-family: var(--ff-number);
   }
   .right {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .btn {
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--clr-dark-bg);
     font-family: inherit;
   }

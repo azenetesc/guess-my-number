@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Press+Start+2P&display=swap");
 :root {
   --clr-dark-bg: hsl(0, 0%, 13%);
   --clr-soft-white: hsl(0, 0%, 93%);
   --clr-light-gray: hsl(0, 0%, 80%);
   --clr-dark-gray: hsl(0, 0%, 20%);
-  --ff-body: "Press Start 2P", sans-serif;
+  --ff-body: "Lalezar", cursive;
+  --ff-number: "Press Start 2P", cursive;
 }
 
 /* Box sizing rules */
@@ -43,7 +44,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -86,6 +86,7 @@ main .guess {
   margin-bottom: 3rem;
 }
 main .left {
+  display: inline-block;
   width: 52rem;
   display: flex;
   flex-direction: column;
@@ -99,8 +100,8 @@ main .right .message {
   margin-bottom: 4rem;
   height: 3rem;
 }
-main .right .label-score {
-  margin-bottom: 2rem;
+main .right .label-score .score {
+  color: #ee4a4a;
 }
 
 html {
@@ -114,30 +115,34 @@ body {
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 8rem;
+  letter-spacing: 5px;
 }
 header .between {
-  font-size: 1.4rem;
+  font-size: 2.5rem;
 }
 header .number {
-  font-size: 6rem;
+  font-size: 8rem;
   color: var(--clr-dark-gray);
+}
+header .again {
+  font-size: 1.5rem;
 }
 
 main {
   color: var(--clr-soft-white);
 }
 main .guess {
-  font-size: 5rem;
+  font-size: 6rem;
   color: inherit;
   text-align: center;
-  font-family: inherit;
+  font-family: var(--ff-number);
 }
 main .right {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 main .btn {
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--clr-dark-bg);
   font-family: inherit;
 }
@@ -152,12 +157,16 @@ header .again {
   border: none;
   border-radius: 5px;
   background-color: var(--clr-soft-white);
-  padding: 2rem 3rem;
+  padding: 0rem 2rem;
   cursor: pointer;
-  box-shadow: 1px 1px 5px 2px rgba(3, 255, 255, 0.397);
+  transition: all 0.3s ease;
 }
 .btn:hover {
   background-color: var(--clr-light-gray);
+}
+.btn:active {
+  background-color: #00eeff;
+  transform: scale(0.9);
 }
 
 header {
@@ -180,7 +189,8 @@ header .between {
 header .number {
   background: var(--clr-soft-white);
   width: 15rem;
-  padding: 3rem 0rem;
+  padding: 0.5rem 0rem;
+  border-radius: 50%;
   position: absolute;
   bottom: 0;
   left: 50%;
